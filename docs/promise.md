@@ -720,7 +720,8 @@ const promises = [
   fetch('/api-3'),
 ];
 
-await Promise.allSettled(promises);
+// 下面这个代码会报错 ，得不到描述的结果
+await Promise.allSettled(promises);   
 removeLoadingIndicator();
 ```
 
